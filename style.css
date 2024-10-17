@@ -13,7 +13,7 @@ body {
 .main {
   position: relative;
 
-  background-image: url('bg.jpg');
+  background-image: url("images/bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: max(1200px, 100vw);
@@ -37,7 +37,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  padding:0px 10px;
+  padding: 0px 10px;
 }
 
 nav img {
@@ -45,13 +45,13 @@ nav img {
   width: 145px;
   position: relative;
   z-index: 10;
-
+  padding: 0px 10px;
 }
 
 nav button {
   position: relative;
   z-index: 10;
-  margin:10px 2px;
+
 }
 
 .hero {
@@ -246,10 +246,11 @@ footer {
 }
 
 @media screen and (max-width: 1256px) {
-  nav{
+  nav {
     max-width: 80vh;
- 
+
   }
+
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -258,7 +259,7 @@ footer {
 
   .secimg video {
     width: 337px;
-    top:50px;
+    top: 50px;
   }
 
   .secimg img {
@@ -277,6 +278,7 @@ footer {
     font-size: 15px;
 
   }
+
   .hero-btn {
     display: flex;
     justify-content: center;
@@ -284,20 +286,31 @@ footer {
     gap: 16px;
     flex-direction: column;
   }
+
   footer {
     color: white;
     max-width: 90vw;
     margin: auto;
     padding: 14px;
-}
-section.first>div {
+  }
 
-  padding:8px 0px;
+  section.first>div {
+
+    padding: 8px 0px;
+  }
+
+  nav button {
+    display: flex;
+    flex-direction: row;
+
+    margin: 5px 2px;
+  }
+
 }
-}
+
 .footer-item {
-    align-items: center;
-   
+  align-items: center;
+
 
 }
 
